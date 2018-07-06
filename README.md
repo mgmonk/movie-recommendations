@@ -1,2 +1,2 @@
-# movie-recommendations
+# Movie Recommendations
 Simple movie recommendations.
