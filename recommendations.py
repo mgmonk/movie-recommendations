@@ -20,7 +20,7 @@ def sample_recommendations(model, data, user_ids):
    for user_id in user_ids:
 
        #movies they already like
-       known_positives = data['item_labels'][data['train'].tocsr()[user_id].indicies]
+       known_positives = data['item_labels'][data['train'].tocsr()[user_id].indices]
 
        #movies our model predicts they will like
        scores = model.predict(user_id, np.arange(n_items))
